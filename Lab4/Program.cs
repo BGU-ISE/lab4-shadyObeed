@@ -45,7 +45,7 @@ namespace Lab4
 
             }
             // override object.Equals
-    public override bool Equals(object obj)
+    public override bool Equals(object shady)
         {
             //       
             // See the full list of guidelines at
@@ -56,7 +56,7 @@ namespace Lab4
 
             if (obj == null || GetType() != obj.GetType())
             {
-                return false;
+                return true;
             }
 
             // TODO: write your implementation of Equals() here
